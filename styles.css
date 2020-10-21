@@ -1,0 +1,80 @@
+:root {
+	--blue-accent: #1497c1;
+	--brown-accent: #4b2212;
+}
+html {
+}
+h2,
+h3,
+h4,
+h5 {
+	margin: 0px;
+	color: var(--blue-accent);
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+body {
+	margin: 0px;
+}
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 5px;
+	background-color: var(--brown-accent);
+	color: white;
+}
+nav .site-title-container {
+	margin-right: auto;
+}
+nav .nav-menu ul {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+.nav-menu ul li {
+	padding: 5px;
+	border: 3px solid transparent;
+}
+.nav-menu ul li:hover {
+	border-bottom: 3px solid var(--blue-accent);
+	border-radius: 10px;
+}
+.logo-container {
+	margin: 5px;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	border: solid 1px black;
+	background-color: white;
+}
+.logo-container img {
+	height: 100px;
+}
+section {
+	border-radius: 5px;
+	background-color: #eee;
+	position: relative;
+	padding: 20px;
+	margin: 50px;
+}
+main {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-image: url('./img/pexels-jana-t-4231488.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
