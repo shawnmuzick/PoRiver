@@ -1,12 +1,11 @@
 import { products } from './products.js';
-console.log(products);
+import { buildSingleProduct } from './buildSingleProduct.js';
 const shop = document.getElementById('shop');
 
 function buildProducts(products) {
 	products.forEach((p) => {
 		const item = document.createElement('div');
 		item.classList.add('product-card');
-		shop.appendChild(item);
 
 		const image = document.createElement('img');
 		image.src = `./img/${p.model}.png`;
@@ -23,6 +22,15 @@ function buildProducts(products) {
 		price.classList.add('product-card-price');
 		item.appendChild(price);
 		item.setAttribute('id', `${p.model}`);
+		item.addEventListener(
+			'click',
+			(e) => {
+				buildSingleProduct(e, p);
+			},
+			true
+		);
+
+		shop.appendChild(item);
 	});
 }
 buildProducts(products);

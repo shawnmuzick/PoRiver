@@ -28,6 +28,10 @@ nav {
 	padding: 5px;
 	background-color: var(--brown-accent);
 	color: white;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0px;
+	z-index: 1;
 }
 nav .site-title-container {
 	margin-right: auto;
@@ -72,9 +76,20 @@ main {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	position: relative;
+}
+main:before {
+	min-height: 100vh;
 	background-image: url('./img/pexels-jana-t-4231488.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	opacity: 0.8;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	content: ' ';
+	position: absolute;
 }

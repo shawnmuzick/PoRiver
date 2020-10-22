@@ -4,6 +4,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	position: relative;
 }
 .product-card {
 	display: flex;
@@ -26,4 +27,47 @@
 .product-card img {
 	height: 300px;
 	width: 300px;
+}
+dialog {
+	display: flex; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+dialog .modal-container {
+	display: flex;
+	flex-direction: column;
+	background-color: #fefefe;
+	margin: auto; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 3px;
+}
+.modal-body {
+	padding: 5px;
+	margin: 10px;
+}
+.modal-header {
+	display: flex;
+	margin-left: auto;
+	padding: 5px;
+}
+.modal-close-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: none;
+	padding: 5px;
+	width: 20px;
+	height: 20px;
+	border-radius: 3px;
+}
+.modal-close-btn:hover {
+	background-color: #eee;
 }
