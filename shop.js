@@ -8,7 +8,7 @@ function buildProducts(products) {
 		item.classList.add('product-card');
 
 		const image = document.createElement('img');
-		image.src = `./img/${p.model}.png`;
+		image.src = `./img/${p.model}-${p.instrument}.png`;
 		image.classList.add('product-card-img');
 		item.appendChild(image);
 
@@ -18,7 +18,7 @@ function buildProducts(products) {
 		item.appendChild(title);
 
 		const price = document.createElement('p');
-		price.innerText = `${p.price}`;
+		price.innerText = `$${p.price}`;
 		price.classList.add('product-card-price');
 		item.appendChild(price);
 		item.setAttribute('id', `${p.model}`);

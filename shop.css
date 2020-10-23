@@ -1,3 +1,7 @@
+:root {
+	--blue-accent: #1497c1;
+	--brown-accent: #4b2212;
+}
 .shop {
 	margin: 5px;
 	padding: 5px;
@@ -51,6 +55,10 @@ dialog .modal-container {
 .modal-body {
 	padding: 5px;
 	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .modal-header {
 	display: flex;
@@ -69,5 +77,10 @@ dialog .modal-container {
 	border-radius: 3px;
 }
 .modal-close-btn:hover {
-	background-color: #eee;
+	background-color: var(--brown-accent);
+	color: white;
+}
+.single-product-description {
+	padding: 5px;
+	margin: 10px;
 }
