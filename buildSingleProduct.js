@@ -15,23 +15,58 @@ function buildModalHeader(closeBtn) {
 
 function productDescription(product) {
 	let description = document.createElement('div');
-	description.innerText = product.long;
+	let features = document.createElement('ul');
+	features.classList.add('single-product-features');
+	for (let i = 0; i < product.long.length; i++) {
+		let li = document.createElement('li');
+		li.classList.add('single-product-single-feature');
+		li.innerText = product.long[i];
+		features.appendChild(li);
+	}
 	description.classList.add('single-product-description');
+	description.appendChild(features);
 	return description;
+}
+function selectImage(src) {
+	let main = document.getElementById('selected-product');
+	main.src = src;
+}
+
+function buildTheater(product) {
+	let theater = document.createElement('div');
+	theater.classList.add('single-product-theater');
+	let mainImg = document.createElement('img');
+	mainImg.classList.add('single-product-theater-img');
+	mainImg.src = `./img/${product.model}-${product.instrument}.png`;
+	mainImg.addEventListener('click', () => selectImage(mainImg.src));
+	theater.appendChild(mainImg);
+	for (let i = 0; i < product.imageTheater.length; i++) {
+		let img = document.createElement('img');
+		img.classList.add('single-product-theater-image');
+		img.src = `./img/${product.model}-${product.instrument}-${product.imageTheater[i]}.png`;
+		img.addEventListener('click', () => selectImage(img.src));
+		theater.appendChild(img);
+	}
+	return theater;
 }
 
 function buildModalBody(product) {
 	let modalBody = document.createElement('div');
+	let modalInner = document.createElement('div');
+	modalInner.classList.add('modal-body-inner');
 	let modalImage = document.createElement('img');
 	let title = document.createElement('h3');
 	let description = productDescription(product);
-
+	let theater = buildTheater(product);
 	title.innerText = product.model;
 	modalImage.src = `./img/${product.model}-${product.instrument}.png`;
+	modalImage.setAttribute('id', `selected-product`);
 	modalBody.classList.add('modal-body');
 	modalBody.appendChild(title);
-	modalBody.appendChild(modalImage);
-	modalBody.appendChild(description);
+	modalInner.appendChild(modalImage);
+	modalInner.appendChild(description);
+	modalBody.appendChild(modalInner);
+	modalBody.appendChild(theater);
 	return modalBody;
 }
 
