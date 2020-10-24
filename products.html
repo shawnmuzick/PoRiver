@@ -8,24 +8,39 @@
 		<title>Po River</title>
 	</head>
 	<body id="body">
-		<nav class="nav" id="nav">
+		<div class="hero">
+			<section class="hero-text-container">
+				<h2 class="hero-text">
+					Hand Crafted Romainian Orchestral Instruments
+				</h2>
+			</section>
+		</div>
+		<main>
+			<div class="shop" id="shop"></div>
+		</main>
+		<ul class="nav-menu" id="nav-menu">
 			<div class="logo-container">
 				<img src="./img/Po River small.JPG" alt="" />
 			</div>
 			<div class="site-title-container">
 				<h1 class="site-title">Po River</h1>
 			</div>
-			<div class="nav-menu">
-				<ul>
-					<a href="./index.html"><li>Home</li></a>
-					<a href="./products.html"><li>Products</li></a>
-					<li>About</li>
-				</ul>
+			<a href="./index.html"><li>Home</li></a>
+			<a href="./products.html"><li>Products</li></a>
+			<a href="./about.html"><li>About</li></a>
+		</ul>
+		<nav class="nav" id="mobile-nav">
+			<button class="nav-expand-btn btn" id="mobile-nav-expand">
+				<img src="/img/menu-24px.svg" />
+			</button>
+			<div class="logo-container">
+				<img src="./img/Po River small.JPG" alt="" />
+			</div>
+			<div class="site-title-container">
+				<h1 class="site-title">Po River</h1>
 			</div>
 		</nav>
-		<main>
-			<div class="shop" id="shop"></div>
-		</main>
+		<script src="./nav.js"></script>
 		<script src="./shop.js" type="module"></script>
 	</body>
 </html>
