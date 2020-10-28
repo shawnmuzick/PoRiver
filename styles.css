@@ -54,6 +54,10 @@ nav .nav-menu {
 .logo-container img {
 	height: 50px;
 }
+.nav-menu .logo-container,
+.nav-menu .site-title-container {
+	display: none;
+}
 .site-title {
 	color: white;
 }
@@ -213,5 +217,9 @@ nav,
 	}
 	.hero-text {
 		font-size: 2rem;
+	}
+	.nav-menu .logo-container,
+	.nav-menu .site-title-container {
+		display: flex;
 	}
 }
