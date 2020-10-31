@@ -81,7 +81,8 @@ dialog .modal-container {
 	padding: 5px;
 	box-sizing: border-box;
 }
-.modal-close-btn {
+.modal-close-btn,
+#shop-filter-close {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -93,7 +94,8 @@ dialog .modal-container {
 	border-radius: 3px;
 	box-sizing: border-box;
 }
-.modal-close-btn:hover {
+.modal-close-btn:hover,
+#shop-filter-close:hover {
 	background-color: var(--brown-accent);
 	color: white;
 }
@@ -125,4 +127,36 @@ dialog .modal-container {
 #selected-product {
 	height: 430px;
 	width: 430px;
+}
+.shop-wrapper {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+}
+.shop-filters {
+	padding: 10px;
+	margin: 0px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	border-radius: 3px;
+	width: auto;
+	height: fit-content;
+}
+#shop-filter-close {
+	margin-left: auto;
+}
+.shop-filters h3 {
+	text-align: center;
+}
+.input-group {
+	display: flex;
+	flex-direction: row;
+}
+
+@media screen and (min-width: 1024px) {
+	#shop-filter-close {
+		display: none;
+	}
 }
