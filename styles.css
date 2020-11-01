@@ -2,6 +2,13 @@
 	--blue-accent: #1497c1;
 	--brown-accent: #4b2212;
 }
+@font-face {
+	font-family: Roboto;
+	src: url('./Roboto/Roboto-Black.ttf');
+}
+html {
+	font-family: Roboto;
+}
 h2,
 h3,
 h4,
@@ -81,8 +88,8 @@ nav .nav-menu {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	opacity: 0.7;
 	position: absolute;
+	filter: contrast(70%);
 }
 .hero-text-container {
 	background-color: transparent;
@@ -92,8 +99,10 @@ nav .nav-menu {
 .hero-text {
 	color: white;
 	font-weight: bolder;
-	text-shadow: 2px 0px 5px black;
-	font-size: 1.5rem;
+	text-shadow: 0px 5px 4px black;
+	font-size: 2rem;
+	-webkit-text-stroke-color: var(--brown-accent);
+	-webkit-text-stroke-width: 2px;
 }
 main {
 	min-height: 100vh;

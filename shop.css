@@ -158,6 +158,7 @@ dialog .modal-container {
 }
 .filter-show {
 	z-index: 2;
+	max-height: 50px;
 }
 .filter-container-hide {
 	display: none;
