@@ -166,6 +166,11 @@ dialog .modal-container {
 	background-color: white;
 	border: solid 0px transparent;
 	border: solid 1px var(--blue-accent);
+	border-radius: 3px;
+}
+.filter-show button:focus {
+	border: solid 1px var(--blue-accent);
+	outline: solid 1px var(--blue-accent);
 }
 
 @media screen and (min-width: 1024px) {
