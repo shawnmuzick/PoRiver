@@ -3,6 +3,8 @@ import { buildSingleProduct } from './buildSingleProduct.js';
 const shop = document.getElementById('shop');
 const filters = document.querySelectorAll('input');
 const filterClose = document.getElementById('shop-filter-close');
+const filterOpen = document.getElementById('shop-filter-open');
+const filterContainer = document.getElementById('filter-container');
 
 function buildProducts(products) {
 	shop.innerHTML = '';
@@ -54,4 +56,16 @@ filters.forEach((f) => {
 		if (filter.length === 0) buildProducts(products);
 		else filterProducts(filter);
 	});
+});
+
+filterClose.addEventListener('click', () => {
+	if (!filterContainer.classList.contains('filter-container-hide')) {
+		filterContainer.classList.add('filter-container-hide');
+	}
+});
+
+filterOpen.addEventListener('click', () => {
+	if (filterContainer.classList.contains('filter-container-hide')) {
+		filterContainer.classList.remove('filter-container-hide');
+	}
 });

@@ -17,7 +17,10 @@
 		</div>
 		<main>
 			<div class="shop-wrapper">
-				<div class="shop-filters">
+				<div
+					class="shop-filters filter-container-hide"
+					id="filter-container"
+				>
 					<button id="shop-filter-close">x</button>
 					<h3>Categories</h3>
 					<br />
@@ -45,6 +48,11 @@
 						/>
 						<label for="cello">Cellos</label>
 					</div>
+				</div>
+				<div class="filter-show">
+					<button id="shop-filter-open">
+						<img src="./img/filter_alt-black-18dp.svg" alt="" />
+					</button>
 				</div>
 				<div class="shop" id="shop"></div>
 			</div>

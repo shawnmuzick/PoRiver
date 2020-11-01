@@ -24,6 +24,7 @@
 	height: var(--width);
 	width: calc(0.8 * var(--height));
 	overflow: hidden;
+	border: solid 1px var(--blue-accent);
 }
 .product-card:hover {
 	box-shadow: 0px 0px 20px 10px var(--blue-accent);
@@ -143,6 +144,7 @@ dialog .modal-container {
 	border-radius: 3px;
 	width: auto;
 	height: fit-content;
+	border: solid 1px var(--blue-accent);
 }
 #shop-filter-close {
 	margin-left: auto;
@@ -153,6 +155,17 @@ dialog .modal-container {
 .input-group {
 	display: flex;
 	flex-direction: row;
+}
+.filter-show {
+	z-index: 2;
+}
+.filter-container-hide {
+	display: none;
+}
+.filter-show button {
+	background-color: white;
+	border: solid 0px transparent;
+	border: solid 1px var(--blue-accent);
 }
 
 @media screen and (min-width: 1024px) {
