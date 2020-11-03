@@ -61,11 +61,13 @@ filters.forEach((f) => {
 filterClose.addEventListener('click', () => {
 	if (!filterContainer.classList.contains('filter-container-hide')) {
 		filterContainer.classList.add('filter-container-hide');
+		filterOpen.classList.remove('filter-container-hide');
 	}
 });
 
 filterOpen.addEventListener('click', () => {
 	if (filterContainer.classList.contains('filter-container-hide')) {
 		filterContainer.classList.remove('filter-container-hide');
+		filterOpen.classList.add('filter-container-hide');
 	}
 });

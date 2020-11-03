@@ -173,9 +173,14 @@ dialog .modal-container {
 	border: solid 1px var(--blue-accent);
 	outline: solid 1px var(--blue-accent);
 }
-
 @media screen and (min-width: 1024px) {
 	#shop-filter-close {
 		display: none;
+	}
+	.filter-show {
+		display: none;
+	}
+	.shop-filters {
+		display: flex;
 	}
 }
