@@ -3,12 +3,12 @@
 	--brown-accent: #4b2212;
 }
 .shop {
-	margin: 5px;
-	padding: 5px;
+	padding-top: 10px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	position: relative;
+	box-sizing: border-box;
 }
 .product-card {
 	display: flex;
@@ -138,13 +138,17 @@ dialog .modal-container {
 	padding: 10px;
 	margin: 0px;
 	background-color: white;
-	display: flex;
-	flex-direction: column;
 	z-index: 1;
 	border-radius: 3px;
-	width: auto;
+	width: 200px;
 	height: fit-content;
 	border: solid 1px var(--blue-accent);
+	position: absolute;
+	transition: 0.3s;
+	overflow-x: hidden;
+}
+.shop-filters .input-group {
+	transition: 0.3s;
 }
 #shop-filter-close {
 	margin-left: auto;
@@ -159,9 +163,13 @@ dialog .modal-container {
 .filter-show {
 	z-index: 2;
 	max-height: 50px;
+	position: absolute;
 }
 .filter-container-hide {
-	display: none;
+	width: 0px;
+	transition: 0.3s;
+	padding: 0px;
+	border: 0px;
 }
 .filter-show button {
 	background-color: white;
@@ -172,6 +180,16 @@ dialog .modal-container {
 .filter-show button:focus {
 	border: solid 1px var(--blue-accent);
 	outline: solid 1px var(--blue-accent);
+}
+@media screen and (max-width: 280px) {
+	.product-card {
+		margin: 0px;
+	}
+}
+@media screen and (min-width: 360px) {
+	.product-card {
+		width: 100%;
+	}
 }
 @media screen and (min-width: 1024px) {
 	#shop-filter-close {
