@@ -1,6 +1,7 @@
 :root {
 	--blue-accent: #1497c1;
 	--brown-accent: #4b2212;
+	--height: 300px;
 }
 .shop {
 	padding-top: 10px;
@@ -15,16 +16,15 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 20px;
+	margin: 20px auto 20px auto;
 	padding: 5px;
 	background-color: white;
 	border-radius: 3px;
 	text-align: center;
-	--height: 300px;
 	height: var(--width);
-	width: calc(0.8 * var(--height));
 	overflow: hidden;
 	border: solid 1px var(--blue-accent);
+	width: 100%;
 }
 .product-card:hover {
 	box-shadow: 0px 0px 20px 10px var(--blue-accent);
@@ -182,13 +182,14 @@ dialog .modal-container {
 	outline: solid 1px var(--blue-accent);
 }
 @media screen and (max-width: 280px) {
-	.product-card {
-		margin: 0px;
+	.product-card img {
+		width: 250px;
+		height: 250px;
 	}
 }
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 768px) {
 	.product-card {
-		width: 100%;
+		width: calc(0.8 * var(--height));
 	}
 }
 @media screen and (min-width: 1024px) {
