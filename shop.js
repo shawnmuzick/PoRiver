@@ -14,7 +14,7 @@ function buildProducts(products) {
 		item.classList.add('product-card');
 
 		const image = document.createElement('img');
-		image.src = `./img/${p.model}-${p.instrument}.png`;
+		image.src = `./img/${p.model}.png`;
 		image.classList.add('product-card-img');
 		item.appendChild(image);
 
@@ -23,10 +23,15 @@ function buildProducts(products) {
 		title.classList.add('product-card-title');
 		item.appendChild(title);
 
+		const short = document.createElement('p');
+		short.innerText = `${p.short}`;
+		item.appendChild(short);
+
 		const price = document.createElement('p');
 		price.innerText = `$${p.price}`;
 		price.classList.add('product-card-price');
 		item.appendChild(price);
+
 		item.setAttribute('id', `${p.model}`);
 		item.addEventListener(
 			'click',

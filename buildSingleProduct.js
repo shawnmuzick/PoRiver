@@ -37,13 +37,13 @@ function buildTheater(product) {
 	theater.classList.add('single-product-theater');
 	let mainImg = document.createElement('img');
 	mainImg.classList.add('single-product-theater-img');
-	mainImg.src = `./img/${product.model}-${product.instrument}.png`;
+	mainImg.src = `./img/${product.model}.png`;
 	mainImg.addEventListener('click', () => selectImage(mainImg.src));
 	theater.appendChild(mainImg);
 	for (let i = 0; i < product.imageTheater.length; i++) {
 		let img = document.createElement('img');
 		img.classList.add('single-product-theater-image');
-		img.src = `./img/${product.model}-${product.instrument}-${product.imageTheater[i]}.png`;
+		img.src = `./img/${product.model}-${product.imageTheater[i]}.png`;
 		img.addEventListener('click', () => selectImage(img.src));
 		theater.appendChild(img);
 	}
@@ -59,7 +59,7 @@ function buildModalBody(product) {
 	let description = productDescription(product);
 	let theater = buildTheater(product);
 	title.innerText = product.model;
-	modalImage.src = `./img/${product.model}-${product.instrument}.png`;
+	modalImage.src = `./img/${product.model}.png`;
 	modalImage.setAttribute('id', `selected-product`);
 	modalBody.classList.add('modal-body');
 	modalBody.appendChild(title);
