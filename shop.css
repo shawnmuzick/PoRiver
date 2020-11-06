@@ -39,7 +39,7 @@ dialog {
 	justify-content: center;
 	align-items: center;
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
+	z-index: 5; /* Sit on top */
 	right: 0;
 	bottom: 0;
 	left: 0;
@@ -181,18 +181,85 @@ dialog .modal-container {
 	border: solid 1px var(--blue-accent);
 	outline: solid 1px var(--blue-accent);
 }
+.product-card p {
+	height: 50px;
+}
 @media screen and (max-width: 280px) {
 	.product-card img {
 		width: 250px;
 		height: 250px;
 	}
 }
+@media screen and (min-width: 280px) {
+	.modal-body-inner {
+		flex-direction: column;
+	}
+	#selected-product {
+		width: 150px;
+		height: 150px;
+		margin: auto;
+	}
+	dialog .modal-container {
+		padding: 5px;
+		max-width: 100%;
+		overflow: scroll;
+	}
+	.modal-body {
+		margin: 0px;
+	}
+	.single-product-description {
+		margin: 0px;
+	}
+	.single-product-features {
+		padding-left: 10px;
+	}
+	.single-product-theater {
+		margin: 0px;
+	}
+	.single-product-theater img {
+		width: 50px;
+		height: 50px;
+	}
+}
+@media screen and (min-width: 360px) {
+	#selected-product {
+		width: 200px;
+		height: 200px;
+	}
+	.single-product-theater img {
+		width: 75px;
+		height: 75px;
+	}
+}
 @media screen and (min-width: 768px) {
 	.product-card {
 		width: calc(0.8 * var(--height));
 	}
+	.modal-body-inner {
+		flex-direction: row;
+	}
+	#selected-product {
+		width: 420px;
+		height: 430px;
+	}
+	.modal-body {
+		margin: 0px;
+	}
+	.single-product-theater {
+		margin: 10px;
+	}
+	.single-product-theater img {
+		width: 100px;
+		height: 100px;
+	}
 }
 @media screen and (min-width: 1024px) {
+	.shop {
+		justify-content: flex-start;
+	}
+	.product-card {
+		margin: 10px;
+	}
 	#shop-filter-close {
 		display: none;
 	}
@@ -201,5 +268,15 @@ dialog .modal-container {
 	}
 	.shop-filters {
 		display: flex;
+	}
+	#filter-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+		border: solid 1px var(--blue-accent);
+		padding: 5px;
+		margin-top: 20px;
+		max-width: 170px;
 	}
 }

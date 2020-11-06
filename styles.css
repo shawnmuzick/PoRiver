@@ -29,7 +29,8 @@ body {
 nav .site-title-container {
 	display: flex;
 	align-items: center;
-	margin-right: auto;
+	box-sizing: border-box;
+	/* margin-right: auto; */
 }
 nav .nav-menu {
 	display: flex;
@@ -41,6 +42,7 @@ nav .nav-menu {
 	padding: 5px;
 	border: 3px solid transparent;
 	color: white;
+	box-sizing: border-box;
 }
 .nav-menu a li:hover {
 	border-bottom: 3px solid var(--blue-accent);
@@ -194,9 +196,6 @@ nav,
 	html {
 		font-size: 1.2rem;
 	}
-	.site-title {
-		font-size: 1.8rem;
-	}
 }
 /* FIXES NEED TO BE MADE HERE */
 @media screen and (min-width: 1024px) {
@@ -244,5 +243,6 @@ nav,
 	}
 	.nav-menu {
 		z-index: 2;
+		padding: 5px;
 	}
 }
