@@ -11,7 +11,7 @@ buildProducts(products, shop);
 
 function filterProducts(filter) {
 	let filteredProducts = products.filter((p) => filter.includes(p.instrument.toLowerCase()));
-	buildProducts(filteredProducts);
+	buildProducts(filteredProducts, shop);
 }
 
 filters.forEach((f) => {
@@ -22,7 +22,7 @@ filters.forEach((f) => {
 				filter.push(f.name);
 			}
 		});
-		if (filter.length === 0) buildProducts(products);
+		if (filter.length === 0) buildProducts(products, shop);
 		else filterProducts(filter);
 	});
 });
