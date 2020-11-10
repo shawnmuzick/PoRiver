@@ -3,7 +3,6 @@ const nav_menu = document.getElementById('nav-menu');
 const nav_links = nav_menu.querySelectorAll('li.landing-menu-item');
 
 function handle_nav() {
-	const nav_links = nav_menu.querySelectorAll('li.landing-menu-item');
 	if (nav_menu.classList.contains('show')) {
 		nav_menu.classList.remove('show');
 	} else {

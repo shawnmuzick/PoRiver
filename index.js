@@ -7,14 +7,15 @@ const right = document.getElementById('right');
 const featuredProducts = products.filter((p) => p.featured === true);
 buildProducts(featuredProducts, slider);
 
-right.addEventListener('click', () => {
-	const card = document.getElementsByClassName('product-card')[0];
-	const width = card.offsetWidth;
+const card = document.getElementsByClassName('product-card')[0];
+const width = card.offsetWidth;
+function carouselScroll(width) {
 	slider.scrollBy({ left: width, top: 0, behavior: 'smooth' });
+}
+right.addEventListener('click', () => {
+	carouselScroll(width);
 });
 
 left.addEventListener('click', () => {
-	const card = document.getElementsByClassName('product-card')[0];
-	const width = card.offsetWidth;
-	slider.scrollBy({ left: -width, top: 0, behavior: 'smooth' });
+	carouselScroll(-width);
 });
