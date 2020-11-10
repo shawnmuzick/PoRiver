@@ -21,7 +21,6 @@
 	background-color: white;
 	border-radius: 3px;
 	text-align: center;
-	height: var(--width);
 	overflow: hidden;
 	border: solid 1px var(--blue-accent);
 	width: 100%;

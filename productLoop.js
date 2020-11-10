@@ -17,6 +17,7 @@ export function buildProducts(products = [], shop) {
 
 		const short = document.createElement('p');
 		short.innerText = `${p.short}`;
+		short.classList.add('product-card-short');
 		item.appendChild(short);
 
 		const price = document.createElement('p');

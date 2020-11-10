@@ -26,6 +26,9 @@ a:visited {
 body {
 	margin: 0px;
 }
+nav {
+	z-index: 3;
+}
 nav .site-title-container {
 	display: flex;
 	align-items: center;
@@ -158,6 +161,7 @@ nav,
 	height: 0px;
 	transition: 0.5s;
 	text-align: left;
+	z-index: 1;
 }
 .nav-menu li {
 	padding: 10px;

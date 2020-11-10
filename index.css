@@ -35,3 +35,12 @@
 .slider-nav-button:focus {
 	outline: none;
 }
+@media screen and (min-width: 768px) {
+	.slider .product-card img {
+		height: 200px;
+		width: 200px;
+	}
+	.slider .product-card p {
+		padding: 5px;
+	}
+}

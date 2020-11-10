@@ -1,19 +1,11 @@
 import { buildProducts } from './productLoop.js';
 import { products } from './products.js';
 const slider = document.getElementById('products-slider');
-const sliderWrapper = document.getElementById('slider-outer');
+const left = document.getElementById('left');
+const right = document.getElementById('right');
 
-buildProducts(products, slider);
-
-const left = document.createElement('button');
-left.innerText = '<';
-left.classList.add('slider-nav-button');
-sliderWrapper.prepend(left);
-
-const right = document.createElement('button');
-right.innerText = '>';
-right.classList.add('slider-nav-button');
-sliderWrapper.appendChild(right);
+const featuredProducts = products.filter((p) => p.featured === true);
+buildProducts(featuredProducts, slider);
 
 right.addEventListener('click', () => {
 	const card = document.getElementsByClassName('product-card')[0];

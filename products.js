@@ -3,6 +3,7 @@ export const products = [
 		model: 'PN20R',
 		instrument: 'Violin',
 		price: 360,
+		featured: true,
 		short: 'A quality instrument at an affordable price',
 		long: [
 			'Assembled in our affiliated workshop',
@@ -22,6 +23,7 @@ export const products = [
 		model: 'PA25R',
 		instrument: 'Viola',
 		price: 550,
+		featured: true,
 		short: 'A quality instrument at an affordable price',
 		long: [
 			'Assembled in our affiliated workshop',
@@ -41,6 +43,7 @@ export const products = [
 		model: 'PN30R',
 		instrument: 'Violin',
 		price: 590,
+		featured: false,
 		short: 'A quality instrument at an affordable price',
 		long: [
 			'Assembled in our affiliated workshop',
@@ -60,6 +63,7 @@ export const products = [
 		model: 'PA40R',
 		instrument: 'Viola',
 		price: 870,
+		featured: false,
 		short: 'A quality instrument at an affordable price',
 		long: [
 			'Assembled in our affiliated workshop',
@@ -79,6 +83,7 @@ export const products = [
 		model: 'PN55R',
 		instrument: 'Violin',
 		price: 750,
+		featured: false,
 		short: 'An intermediate model, for more experienced musicians',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -96,6 +101,7 @@ export const products = [
 		model: 'PN55R-A',
 		instrument: 'Violin',
 		price: 930,
+		featured: false,
 		short: 'An intermediate model, for more experienced musicians',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -114,6 +120,7 @@ export const products = [
 		model: 'PN55R-B',
 		instrument: 'Violin',
 		price: 1000,
+		featured: true,
 		short: 'An intermediate model, for more experienced musicians',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -132,6 +139,7 @@ export const products = [
 		model: 'PA60R',
 		instrument: 'Viola',
 		price: 890,
+		featured: false,
 		short: 'An intermediate model, for more experienced musicians',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -149,6 +157,7 @@ export const products = [
 		model: 'PA60R-A',
 		instrument: 'Viola',
 		price: 1130,
+		featured: false,
 		short: 'An intermediate model, for more experienced musicians',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -167,6 +176,7 @@ export const products = [
 		model: 'PA60R-B',
 		instrument: 'Viola',
 		price: 1410,
+		featured: true,
 		short: 'An intermediate model, for more experienced musicians',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -185,6 +195,7 @@ export const products = [
 		model: 'PN100R',
 		instrument: 'Violin',
 		price: 1160,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -203,6 +214,7 @@ export const products = [
 		model: 'PN100R-A',
 		instrument: 'Violin',
 		price: 1500,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -222,6 +234,7 @@ export const products = [
 		model: 'PA140R',
 		instrument: 'Viola',
 		price: 1320,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -240,6 +253,7 @@ export const products = [
 		model: 'PA140R-A',
 		instrument: 'Viola',
 		price: 1600,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Romanian workshop',
@@ -259,6 +273,7 @@ export const products = [
 		model: 'PN150R',
 		instrument: 'Violin',
 		price: 1600,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Prague workshop',
@@ -277,6 +292,7 @@ export const products = [
 		model: 'PN150R-A',
 		instrument: 'Violin',
 		price: 1970,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Prague workshop',
@@ -296,6 +312,7 @@ export const products = [
 		model: 'PA165R',
 		instrument: 'Viola',
 		price: 2630,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Prague workshop',
@@ -314,6 +331,7 @@ export const products = [
 		model: 'PA165R-A',
 		instrument: 'Viola',
 		price: 3000,
+		featured: false,
 		short: 'A professional model, ideal for college students',
 		long: [
 			'Assembled in our affiliated Prague workshop',
@@ -333,6 +351,7 @@ export const products = [
 		model: 'PN101R',
 		instrument: 'Violin',
 		price: 2820,
+		featured: false,
 		short: 'A professional model, ideal for concert professionals',
 		long: [
 			'Expertly handcrafter master level violin',
@@ -354,6 +373,7 @@ export const products = [
 		model: 'PA102R',
 		instrument: 'Viola',
 		price: 3750,
+		featured: false,
 		short: 'A professional model, ideal for concert professionals',
 		long: [
 			'Expertly handcrafter master level viola',
@@ -375,6 +395,7 @@ export const products = [
 		model: 'PN600R',
 		instrument: 'Violin',
 		price: 3380,
+		featured: true,
 		short: 'A professional model, ideal for concert professionals',
 		long: [
 			'Expertly handcrafter master level violin',
@@ -396,6 +417,7 @@ export const products = [
 		model: 'PA650R',
 		instrument: 'Viola',
 		price: 4500,
+		featured: true,
 		short: 'A professional model, ideal for concert professionals',
 		long: [
 			'Expertly handcrafter master level viola',
