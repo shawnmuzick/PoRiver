@@ -19,3 +19,16 @@ right.addEventListener('click', () => {
 left.addEventListener('click', () => {
 	carouselScroll(-width);
 });
+let x = 0;
+function animate() {
+	carouselScroll(width);
+	if (x < featuredProducts.length) {
+		x++;
+	}
+	if (x === featuredProducts.length - 1) {
+		carouselScroll(-(x * width));
+		x = 0;
+	}
+}
+
+window.setInterval(() => animate(), 3000);
