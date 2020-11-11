@@ -9,6 +9,8 @@ buildProducts(featuredProducts, slider);
 
 const card = document.getElementsByClassName('product-card')[0];
 const width = card.offsetWidth;
+const containerWidth = (featuredProducts.length - 1) * width;
+
 function carouselScroll(width) {
 	slider.scrollBy({ left: width, top: 0, behavior: 'smooth' });
 }
@@ -22,12 +24,19 @@ left.addEventListener('click', () => {
 let x = 0;
 function animate() {
 	carouselScroll(width);
-	if (x < featuredProducts.length) {
-		x++;
+	x += width;
+	if (containerWidth > window.innerWidth) {
+		console.log('if container is bigger than window');
+		if (x >= containerWidth) {
+			carouselScroll(-(featuredProducts.length * width));
+			x = 0;
+		}
 	}
-	if (x === featuredProducts.length - 1) {
-		carouselScroll(-(x * width));
-		x = 0;
+	if (containerWidth < window.innerWidth) {
+		if (x + containerWidth > window.innerWidth) {
+			carouselScroll(-(featuredProducts.length * width));
+			x = 0;
+		}
 	}
 }
 
