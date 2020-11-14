@@ -6,24 +6,32 @@ const filterClose = document.getElementById('shop-filter-close');
 const filterOpen = document.getElementById('shop-filter-open');
 const filterContainer = document.getElementById('filter-container');
 const filterImg = document.getElementById('filter-image');
+const sortBtn = document.getElementById('sortBtn');
+const sort = document.getElementById('sort');
 
 buildProducts(products, shop);
 
-function filterProducts(filter) {
-	let filteredProducts = products.filter((p) => filter.includes(p.instrument.toLowerCase()));
-	buildProducts(filteredProducts, shop);
+function filterProducts(filter, products) {
+	if (filter === null) return products;
+	return products.filter((p) => filter.includes(p.instrument.toLowerCase()));
+}
+
+function getFilters(elements = []) {
+	let arr = [];
+	elements.forEach((f) => {
+		if (f.checked === true) {
+			arr.push(f.name);
+		}
+	});
+	if (arr.length === 0) return null;
+	return arr;
 }
 
 filters.forEach((f) => {
 	f.addEventListener('click', () => {
-		let filter = [];
-		filters.forEach((f) => {
-			if (f.checked === true) {
-				filter.push(f.name);
-			}
-		});
-		if (filter.length === 0) buildProducts(products, shop);
-		else filterProducts(filter);
+		let arr = getFilters(filters);
+		let filteredProducts = filterProducts(arr, products);
+		buildProducts(filteredProducts, shop);
 	});
 });
 
@@ -41,4 +49,15 @@ filterOpen.addEventListener('click', () => {
 		filterOpen.style.display = 'none';
 		filterImg.style.display = 'none';
 	}
+});
+
+sortBtn.addEventListener('click', () => {
+	let arr = getFilters(filters);
+	let filteredProducts = filterProducts(arr, products);
+	if (sort.value === '+') {
+		filteredProducts.sort((a, b) => (a.price > b.price ? 1 : -1));
+	} else if (sort.value === '-') {
+		filteredProducts.sort((a, b) => (a.price < b.price ? 1 : -1));
+	}
+	buildProducts(filteredProducts, shop);
 });
