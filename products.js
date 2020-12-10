@@ -17,7 +17,7 @@ export const products = [
 			'Available in 1/8 to 4/4 sizes',
 			'Outfit includes shaped case, wood bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PA25R',
@@ -37,7 +37,7 @@ export const products = [
 			'Available in 15" to 16.5" sizes',
 			'Outfit includes shaped case, wood bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PN30R',
@@ -57,7 +57,7 @@ export const products = [
 			'Available in 1/8 to 4/4 sizes',
 			'Outfit includes shaped case, wood bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PA40R',
@@ -77,7 +77,7 @@ export const products = [
 			'Available in 1/8 to 4/4 sizes',
 			'Outfit includes shaped case, wood bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PN55R',
@@ -95,7 +95,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 1/8 to 4/4 sizes',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PN55R-A',
@@ -114,7 +114,7 @@ export const products = [
 			'Available in 1/8 to 4/4 sizes',
 			'Outfit A includes shaped case, wood bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PN55R-B',
@@ -133,7 +133,7 @@ export const products = [
 			'Available in 1/8 to 4/4 sizes',
 			'Outfit B includes molded plastic case, Glasser bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PA60R',
@@ -151,7 +151,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 12" to 16.5" sizes',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PA60R-A',
@@ -170,7 +170,7 @@ export const products = [
 			'Available in 12" to 16.5" sizes',
 			'Outfit A includes shaped case, wood bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PA60R-B',
@@ -189,7 +189,7 @@ export const products = [
 			'Available in 12" to 16.5" sizes',
 			'Outfit B includes molded plastic case, Glasser bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PN100R',
@@ -208,7 +208,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 1/8 to 4/4 sizes',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PN100R-A',
@@ -228,7 +228,7 @@ export const products = [
 			'Available in 1/8 to 4/4 sizes',
 			'Outfit includes oblong case, Carbon Fiber bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PA140R',
@@ -247,7 +247,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 12" to 16.5" sizes',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PA140R-A',
@@ -267,7 +267,7 @@ export const products = [
 			'Available in 12" to 16.5" sizes',
 			'Outfit includes oblong case, Carbon Fiber bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PN150R',
@@ -286,7 +286,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 4/4 size only',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PN150R-A',
@@ -306,7 +306,7 @@ export const products = [
 			'Available in 4/4 size only',
 			'Outfit includes oblong case, Carbon Fiber bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PA165R',
@@ -325,7 +325,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 15" to 16.5" sizes',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PA165R-A',
@@ -345,7 +345,7 @@ export const products = [
 			'Available in 15" to 16.5" sizes',
 			'Outfit includes oblong case, Carbon Fiber bow, rosin',
 		],
-		imageTheater: ['Back', 'Outfit'],
+		imageTheater: ['back', 'outfit'],
 	},
 	{
 		model: 'PN101R',
@@ -367,7 +367,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 4/4 size only',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PA102R',
@@ -389,7 +389,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 15-16.5in sizes',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PN600R',
@@ -411,7 +411,7 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 4/4 size only',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 	{
 		model: 'PA650R',
@@ -433,6 +433,6 @@ export const products = [
 			'Each instrument is setup and inspected by hand in our violin shopin NY, USA.',
 			'Available in 4/4 size only',
 		],
-		imageTheater: ['Back'],
+		imageTheater: ['back'],
 	},
 ];

@@ -26,7 +26,6 @@ function animate() {
 	carouselScroll(width);
 	x += width;
 	if (containerWidth > window.innerWidth) {
-		console.log('if container is bigger than window');
 		if (x >= containerWidth) {
 			carouselScroll(-(featuredProducts.length * width));
 			x = 0;
