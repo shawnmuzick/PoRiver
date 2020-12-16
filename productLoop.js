@@ -1,12 +1,13 @@
-import { buildSingleProduct } from './buildSingleProduct.js';
-export function buildProducts(products = [], shop) {
+const buildProducts = (products = [], shop) => {
 	shop.innerHTML = '';
 	products.forEach((p) => {
 		const item = document.createElement('div');
 		item.classList.add('product-card');
 
 		const image = document.createElement('img');
-		image.src = `./img/${p.model}.png`;
+		image.src = `./img/${p.model}.webp`;
+		image.setAttribute('id', `${p.model}`);
+		image.setAttribute('alt', `${p.model}`);
 		image.classList.add('product-card-img');
 		item.appendChild(image);
 
@@ -36,4 +37,4 @@ export function buildProducts(products = [], shop) {
 
 		shop.appendChild(item);
 	});
-}
+};

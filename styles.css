@@ -1,10 +1,11 @@
 :root {
-	--blue-accent: #1497c1;
+	--blue-accent: #3c90c1;
 	--brown-accent: #4b2212;
 }
 @font-face {
 	font-family: Roboto;
 	src: url('./Roboto/Roboto-Black.ttf');
+	font-display: swap;
 }
 html {
 	font-family: Roboto;
@@ -89,7 +90,7 @@ nav .nav-menu {
 	right: 0px;
 	bottom: 0px;
 	content: ' ';
-	background-image: url('./img/pexels-jana-t-4231488.jpg');
+	background-image: url('./img/pexels-jana-t-4231488.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

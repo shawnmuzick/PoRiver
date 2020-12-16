@@ -1,4 +1,4 @@
-export const products = [
+const products = [
 	{
 		model: 'PN20R',
 		instrument: 'Violin',

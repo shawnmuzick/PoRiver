@@ -1,5 +1,3 @@
-import { buildProducts } from './productLoop.js';
-import { products } from './products.js';
 const slider = document.getElementById('products-slider');
 const left = document.getElementById('left');
 const right = document.getElementById('right');
