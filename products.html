@@ -1,154 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script defer src="./keys.js"></script>
-		<!-- ****** faviconit.com favicons ****** -->
-		<link rel="shortcut icon" href="/favicon.ico" />
-		<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
-		<link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png" />
-		<link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png" />
-		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
-		<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-		<link rel="apple-touch-icon" href="/favicon-57.png" />
-		<link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png" />
-		<link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png" />
-		<link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png" />
-		<link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png" />
-		<link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png" />
-		<link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png" />
-		<link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
-		<meta name="msapplication-TileColor" content="#FFFFFF" />
-		<meta name="msapplication-TileImage" content="/favicon-144.png" />
-		<meta name="msapplication-config" content="/browserconfig.xml" />
-		<!-- ****** faviconit.com favicons ****** -->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./styles.min.css" />
-		<link rel="stylesheet" href="./shop.min.css" />
-		<title>Po River</title>
-	</head>
-	<body id="body">
-		<div class="hero">
-			<section class="hero-text-container">
-				<h2 class="hero-text">
-					Hand Crafted Romainian Orchestral Instruments
-				</h2>
-			</section>
-		</div>
-		<main>
-			<div class="shop-wrapper">
-				<div
-					class="shop-filters filter-container-hide"
-					id="filter-container"
-				>
-					<button id="shop-filter-close">x</button>
-					<h3>Categories</h3>
-					<br />
-					<div class="input-group">
-						<input
-							type="checkbox"
-							name="violin"
-							id="violin-checkbox"
-						/>
-						<label for="violin">Violins</label>
-					</div>
-					<div class="input-group">
-						<input
-							type="checkbox"
-							name="viola"
-							id="viola-checkbox"
-						/>
-						<label for="viola">Violas</label>
-					</div>
-					<div class="input-group">
-						<input
-							type="checkbox"
-							name="cello"
-							id="cello-checkbox"
-						/>
-						<label for="cello">Cellos</label>
-					</div>
-					<div class="input-group">
-						<input type="checkbox" name="double bass" />
-						<label for="double bass">Double Basses</label>
-					</div>
-					<div class="input-group">
-						<input type="checkbox" name="violin bows" />
-						<label for="violin bows">Violin Bows</label>
-					</div>
-					<div class="input-group">
-						<input type="checkbox" name="viola bows" />
-						<label for="viola bows">Viola Bows</label>
-					</div>
-					<div class="input-group">
-						<input type="checkbox" name="cello Bows" />
-						<label for="cello bows">Cello Bows</label>
-					</div>
-					<div class="input-group">
-						<input type="checkbox" name="bass bows" />
-						<label for="bass bows">Bass Bows</label>
-					</div>
-					<br />
-					<h3>Sort By</h3>
-					<br />
-					<div class="input-group">
-						<select name="sort" id="sort">
-							<option value="none">Clear Sorting</option>
-							<option value="+">
-								Price: Low to High
-							</option>
-							<option value="-">
-								Price: High to Low
-							</option>
-						</select>
-						<button id="sortBtn">Sort</button>
-					</div>
-				</div>
-				<div class="filter-show">
-					<button id="shop-filter-open">
-						<img
-							id="filter-image"
-							src="./img/filter_alt-black-18dp.svg"
-							alt=""
-						/>
-					</button>
-				</div>
-				<div class="shop" id="shop"></div>
-			</div>
-		</main>
-		<ul class="nav-menu" id="nav-menu">
-			<div class="logo-container">
-				<img src="./img/Po River small.webp" alt="" />
-			</div>
-			<div class="site-title-container">
-				<h1 class="site-title">Po River</h1>
-			</div>
-			<a href="/"><li>Home</li></a>
-			<a href="./products"><li>Products</li></a>
-		</ul>
-		<nav class="nav" id="mobile-nav">
-			<button
-				class="nav-expand-btn btn"
-				id="mobile-nav-expand"
-				name="mobile-nav-expand"
-			>
-				<img src="/img/menu-24px.svg" alt="navbar-expand-icon" />
-			</button>
-			<div class="logo-container">
-				<img src="./img/Po River small.webp" alt="" />
-			</div>
-			<div class="site-title-container">
-				<h1 class="site-title">Po River</h1>
-			</div>
-		</nav>
-		<script src="./nav.min.js" type="text/javascript"></script>
-		<script preload src="./products.min.js" type="text/javascript"></script>
-		<script preload src="./buildSingleProduct.min.js" type="text/javascript"></script>
-		<script preload src="./productLoop.min.js" type="text/javascript"></script>
-		<script src="./shop.min.js" type="text/javascript"></script>
-	</body>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="./keys.js"></script>
+    <!-- ****** faviconit.com favicons ****** -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" sizes="16x16 32x32 64x64" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="196x196" href="/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="160x160" href="/favicon-160.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+    <link rel="apple-touch-icon" href="/favicon-57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon-114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon-72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon-144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon-60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon-120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon-76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon-152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/favicon-144.png" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <!-- ****** faviconit.com favicons ****** -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preload" href="./Roboto/Roboto-Black.ttf" as="font" crossorigin="anonymous" />
+    <link
+      rel="preload"
+      href="./public/css/styles.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./public/css/styles.min.css" /></noscript>
+    <link
+      rel="preload"
+      href="./public/css/shop.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./public/css/shop.min.css" /></noscript>
+    <title>Po River</title>
+  </head>
+  <body id="body">
+    <div class="hero">
+      <section class="hero-text-container">
+        <h2 class="hero-text">Hand Crafted Romainian Orchestral Instruments</h2>
+      </section>
+    </div>
+    <main>
+      <div class="shop-wrapper">
+        <div class="shop-filters filter-container-hide" id="filter-container">
+          <button id="shop-filter-close">x</button>
+          <h3>Categories</h3>
+          <br />
+          <div class="input-group">
+            <input type="checkbox" name="violin" id="violin-checkbox" />
+            <label for="violin">Violins</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="viola" id="viola-checkbox" />
+            <label for="viola">Violas</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="cello" id="cello-checkbox" />
+            <label for="cello">Cellos</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="double bass" />
+            <label for="double bass">Double Basses</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="violin bows" />
+            <label for="violin bows">Violin Bows</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="viola bows" />
+            <label for="viola bows">Viola Bows</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="cello Bows" />
+            <label for="cello bows">Cello Bows</label>
+          </div>
+          <div class="input-group">
+            <input type="checkbox" name="bass bows" />
+            <label for="bass bows">Bass Bows</label>
+          </div>
+          <br />
+          <h3>Sort By</h3>
+          <br />
+          <div class="input-group">
+            <select name="sort" id="sort">
+              <option value="none">Clear Sorting</option>
+              <option value="+">Price: Low to High</option>
+              <option value="-">Price: High to Low</option>
+            </select>
+            <button id="sortBtn">Sort</button>
+          </div>
+        </div>
+        <div class="filter-show">
+          <button id="shop-filter-open">
+            <img id="filter-image" src="./img/filter_alt-black-18dp.svg" alt="" />
+          </button>
+        </div>
+        <div class="shop" id="shop"></div>
+      </div>
+    </main>
+    <ul class="nav-menu" id="nav-menu">
+      <div class="logo-container">
+        <img src="./img/Po River small.webp" alt="" />
+      </div>
+      <div class="site-title-container">
+        <h1 class="site-title">Po River</h1>
+      </div>
+      <a href="/"><li>Home</li></a>
+      <a href="./products"><li>Products</li></a>
+      <a href="./articles"><li>Articles</li></a>
+    </ul>
+    <nav class="nav" id="mobile-nav">
+      <button class="nav-expand-btn btn" id="mobile-nav-expand" name="mobile-nav-expand">
+        <img src="/img/menu-24px.svg" alt="navbar-expand-icon" />
+      </button>
+      <div class="logo-container">
+        <img src="./img/Po River small.webp" alt="" />
+      </div>
+      <div class="site-title-container">
+        <h1 class="site-title">Po River</h1>
+      </div>
+    </nav>
+    <script src="./public/js/nav.min.js" type="text/javascript"></script>
+    <script preload src="./public/js/products.min.js" type="text/javascript"></script>
+    <script preload src="./public/js/buildSingleProduct.min.js" type="text/javascript"></script>
+    <script preload src="./public/js/productLoop.min.js" type="text/javascript"></script>
+    <script src="./public/js/shop.min.js" type="text/javascript"></script>
+  </body>
 </html>
