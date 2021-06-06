@@ -193,7 +193,7 @@ dialog .modal-container {
   height: 50px;
 }
 .wave {
-  position: absolute;
+  position: fixed;
   background: transparent;
   height: 100vh;
   width: 100vw;
