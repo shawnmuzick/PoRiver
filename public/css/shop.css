@@ -4,7 +4,7 @@
   --height: 300px;
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .shop {
   padding-top: 10px;
@@ -342,4 +342,8 @@ dialog .modal-container {
     margin-top: 20px;
     max-width: 170px;
   }
+.wave {
+  height: 100vw;
+  width: 100vw;
+}
 }
