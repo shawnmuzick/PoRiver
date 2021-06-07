@@ -3,7 +3,7 @@
   --brown-accent: #4b2212;
   --height: 300px;
 }
-body{
+body {
   overflow-x: hidden;
 }
 .shop {
@@ -38,17 +38,17 @@ body{
   width: 300px;
 }
 dialog {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: fixed; 
-  z-index: 5; 
+  position: fixed;
+  z-index: 5;
   right: 0;
   bottom: 0;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
   width: auto;
   height: 100vh;
   box-sizing: border-box;
@@ -196,7 +196,7 @@ dialog .modal-container {
   position: fixed;
   background: transparent;
   height: 100vh;
-  width: 100vw;
+  width: 100vh;
   outline: 0px;
   border: 0px;
   overflow: hidden;
@@ -342,8 +342,8 @@ dialog .modal-container {
     margin-top: 20px;
     max-width: 170px;
   }
-.wave {
-  height: 100vw;
-  width: 100vw;
-}
+  .wave {
+    height: 100vw;
+    width: 100vw;
+  }
 }
