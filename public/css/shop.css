@@ -199,7 +199,7 @@ dialog .modal-container {
   width: 100vh;
   outline: 0px;
   border: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 7;
 }
 .wave::before {
@@ -211,7 +211,7 @@ dialog .modal-container {
   bottom: -65%;
   left: -50%;
   border-radius: 40%;
-  animation: wave2 4s ease-in-out infinite;
+  animation: wave2 4s ease-out infinite;
 }
 .wave:after {
   content: "";
@@ -222,7 +222,7 @@ dialog .modal-container {
   bottom: -70%;
   left: -50%;
   border-radius: 45%;
-  animation: wave 4s ease-in-out infinite;
+  animation: wave 4s ease-out infinite;
   z-index: 7;
 }
 @keyframes wave {
