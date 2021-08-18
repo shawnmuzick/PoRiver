@@ -2,7 +2,7 @@ const buildProducts = (products = [], shop) => {
 	shop.innerHTML = '';
 	products.forEach((p) => {
 		const item = document.createElement('div');
-		item.classList.add('product-card');
+		item.classList.add('flex','column','product-card');
 
 		const image = document.createElement('img');
 		image.src = `./img/${p.model}.webp`;

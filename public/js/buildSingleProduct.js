@@ -1,6 +1,6 @@
 function buildModalContainer(modalHeader, modalBody) {
   let modalContainer = document.createElement("div");
-  modalContainer.classList.add("modal-container");
+  modalContainer.classList.add("flex", "column", "modal-container");
   modalContainer.appendChild(modalHeader);
   modalContainer.appendChild(modalBody);
   return modalContainer;
@@ -8,7 +8,7 @@ function buildModalContainer(modalHeader, modalBody) {
 
 function buildModalHeader(closeBtn) {
   let modalHeader = document.createElement("div");
-  modalHeader.classList.add("modal-header");
+  modalHeader.classList.add("flex", "modal-header");
   modalHeader.appendChild(closeBtn);
   return modalHeader;
 }
@@ -54,7 +54,7 @@ function buildTheater(product) {
 function buildModalBody(product) {
   let modalBody = document.createElement("div");
   let modalInner = document.createElement("div");
-  modalInner.classList.add("modal-body-inner");
+  modalInner.classList.add("flex", "modal-body-inner");
   let modalImage = document.createElement("img");
   let title = document.createElement("h3");
   let description = productDescription(product);
@@ -67,7 +67,7 @@ function buildModalBody(product) {
   title.innerText = product.model;
   modalImage.src = `./img/${product.model}.webp`;
   modalImage.setAttribute("id", `selected-product`);
-  modalBody.classList.add("modal-body");
+  modalBody.classList.add("flex", "column", "modal-body");
   modalBody.appendChild(title);
   modalInner.appendChild(modalImage);
   modalInner.appendChild(description);
