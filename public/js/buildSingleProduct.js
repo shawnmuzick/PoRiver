@@ -19,7 +19,7 @@ function productDescription(product) {
   features.classList.add("single-product-features");
   for (let i = 0; i < product.long.length; i++) {
     let li = document.createElement("li");
-    li.classList.add("single-product-single-feature");
+    li.classList.add("flex","single-product-single-feature");
     li.innerText = product.long[i];
     features.appendChild(li);
   }
@@ -80,7 +80,7 @@ function buildModalButton(product) {
   let closeBtn = document.createElement("button");
   closeBtn.innerText = "x";
   closeBtn.addEventListener("click", () => destroyModal(product.model));
-  closeBtn.classList.add("modal-close-btn");
+  closeBtn.classList.add("flex", "modal-close-btn");
   return closeBtn;
 }
 

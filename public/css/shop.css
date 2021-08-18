@@ -101,7 +101,6 @@ dialog .modal-container {
   box-sizing: border-box;
 }
 .single-product-theater {
-  display: flex;
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
