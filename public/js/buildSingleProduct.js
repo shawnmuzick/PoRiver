@@ -67,7 +67,7 @@ function ThumbNail(product, i) {
 function buildTheater(product) {
   return Factory.create_node({
     type: "div",
-    cssClass: ["single-product-theater"],
+    cssClass: ["flex", "single-product-theater"],
     children: [...product.imageTheater.map((elem, i) => ThumbNail(product, i))],
   });
 }
@@ -129,6 +129,7 @@ function Modal(product) {
   return Factory.create_node({
     type: "DIALOG",
     attributes: { id: `${product.model}-modal` },
+    cssClass: ["flex", "column"],
     children: [ModalContainer(product)],
   });
 }

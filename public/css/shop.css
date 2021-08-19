@@ -3,7 +3,6 @@ body {
 }
 .shop {
   padding-top: 10px;
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
@@ -31,8 +30,6 @@ body {
   width: 300px;
 }
 dialog {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -124,7 +121,6 @@ dialog .modal-container {
   width: 430px;
 }
 .shop-wrapper {
-  display: flex;
   flex-direction: row;
   background-color: white;
 }
@@ -151,7 +147,6 @@ dialog .modal-container {
   text-align: center;
 }
 .input-group {
-  display: flex;
   flex-direction: row;
 }
 .filter-show {
@@ -185,7 +180,6 @@ dialog .modal-container {
   width: 100vh;
   outline: 0px;
   border: 0px;
-  /* overflow: hidden; */
   z-index: 7;
 }
 .wave::before {
