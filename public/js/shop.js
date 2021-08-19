@@ -1,3 +1,4 @@
+import { buildProducts } from "./productLoop.js";
 const shop = document.getElementById("shop");
 const filters = document.querySelectorAll("input");
 const filterClose = document.getElementById("shop-filter-close");

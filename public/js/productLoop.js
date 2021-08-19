@@ -1,40 +1,68 @@
-const buildProducts = (products = [], shop) => {
-	shop.innerHTML = '';
-	products.forEach((p) => {
-		const item = document.createElement('div');
-		item.classList.add('flex','column','product-card');
+import { Factory } from "./factory/factory.js";
+import { buildSingleProduct } from "./buildSingleProduct.js";
+function Image(p) {
+  return Factory.create_node({
+    type: "img",
+    attributes: {
+      id: `${p.model}`,
+      alt: `${p.model}`,
+      cssClass: ["product-card-img"],
+    },
+    properties: {
+      src: `./img/${p.model}.webp`,
+    },
+  });
+}
 
-		const image = document.createElement('img');
-		image.src = `./img/${p.model}.webp`;
-		image.setAttribute('id', `${p.model}`);
-		image.setAttribute('alt', `${p.model}`);
-		image.classList.add('product-card-img');
-		item.appendChild(image);
+function Title(p) {
+  return Factory.create_node({
+    type: "h3",
+    properties: {
+      innerText: `${p.model}`,
+      cssClass: ["product-card-title"],
+    },
+  });
+}
 
-		const title = document.createElement('h3');
-		title.innerText = `${p.model}`;
-		title.classList.add('product-card-title');
-		item.appendChild(title);
+function ShortDesc(p) {
+  return Factory.create_node({
+    type: "p",
+    properties: {
+      innerText: `${p.short}`,
+      cssClass: ["product-card-short"],
+    },
+  });
+}
 
-		const short = document.createElement('p');
-		short.innerText = `${p.short}`;
-		short.classList.add('product-card-short');
-		item.appendChild(short);
+function Price(p) {
+  return Factory.create_node({
+    type: "p",
+    properties: {
+      innerText: `$${p.price}`,
+      cssClass: ["product-card-price"],
+    },
+  });
+}
 
-		const price = document.createElement('p');
-		price.innerText = `$${p.price}`;
-		price.classList.add('product-card-price');
-		item.appendChild(price);
+export const buildProducts = (products = [], shop) => {
+  shop.innerHTML = "";
+  products.forEach((p) => {
+    const item = Factory.create_node({
+      type: "div",
+      cssClass: ["flex", "column", "product-card"],
+      attributes: {
+        id: `${p.model}`,
+      },
+      children: [Image(p), Title(p), ShortDesc(p), Price(p)],
+    });
 
-		item.setAttribute('id', `${p.model}`);
-		item.addEventListener(
-			'click',
-			(e) => {
-				buildSingleProduct(e, p);
-			},
-			true
-		);
-
-		shop.appendChild(item);
-	});
+    item.addEventListener(
+      "click",
+      (e) => {
+        buildSingleProduct(e, p);
+      },
+      true
+    );
+    shop.appendChild(item);
+  });
 };
