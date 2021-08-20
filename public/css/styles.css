@@ -56,6 +56,7 @@ nav .nav-menu {
   border: 3px solid transparent;
   color: white;
   box-sizing: border-box;
+  list-style: none;
 }
 .nav-menu a li:hover {
   border-bottom: 3px solid var(--blue-accent);

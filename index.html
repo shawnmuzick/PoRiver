@@ -61,7 +61,7 @@
       <h2 class="hero-text">Hand Crafted Romainian Orchestral Instruments</h2>
     </section>
   </div>
-  <main class="flex column">
+  <main class="flex column" id="main">
     <section class="flex column card landing">
       <h2>Quality Hand Crafted Romainian Orchestral Instruments</h2>
       <p>
@@ -88,39 +88,11 @@
 
     </section>
   </main>
-  <ul class="flex nav-menu" id="nav-menu">
-    <div class="flex logo-container">
-      <img src="./img/Po River small.webp" alt="" />
-    </div>
-    <div class="site-title-container">
-      <h1 class="site-title">Po River</h1>
-    </div>
-    <a href="/">
-      <li>Home</li>
-    </a>
-    <a href="/products">
-      <li>Products</li>
-    </a>
-    <a href="./articles">
-      <li>Articles</li>
-    </a>
-  </ul>
-  <nav class="nav" id="mobile-nav">
-    <button class="nav-expand-btn btn" id="mobile-nav-expand" name="mobile-nav-expand">
-      <img src="/img/menu-24px.svg" alt="navbar-expand-icon" />
-    </button>
-    <div class="flex logo-container">
-      <img src="./img/Po River small.webp" alt="" />
-    </div>
-    <div class="site-title-container">
-      <h1 class="site-title">Po River</h1>
-    </div>
-  </nav>
-  <script src="./public/js/nav.min.js" type="text/javascript"></script>
-  <script preload src="./public/js/products.min.js" type="text/javascript"></script>
-  <script preload src="./public/js/buildSingleProduct.min.js" type="module"></script>
-  <script preload src="./public/js/productLoop.min.js" type="module"></script>
-  <script src="./public/js/index.min.js" type="module"></script>
+  <script src="/public/components/componentLoader.min.js" type="module"></script>
+  <script preload src="/public/js/products.min.js" type="text/javascript"></script>
+  <script preload src="/public/js/buildSingleProduct.min.js" type="module"></script>
+  <script preload src="/public/js/productLoop.min.js" type="module"></script>
+  <script src="/public/js/index.min.js" type="module"></script>
 </body>
 
 </html>

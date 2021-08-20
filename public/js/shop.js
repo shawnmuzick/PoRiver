@@ -11,26 +11,19 @@ let state = [...products];
 buildProducts(state, shop);
 
 function filterProducts(filter, products) {
-  if (filter === null) return products;
-  return products.filter((p) => filter.includes(p.instrument.toLowerCase()));
+  return filter === null
+    ? products
+    : products.filter((p) => filter.includes(p.instrument.toLowerCase()));
 }
 
 function getFilters(elements = []) {
-  let arr = [];
-  elements.forEach((f) => {
-    if (f.checked === true) {
-      arr.push(f.name);
-    }
-  });
-  if (arr.length === 0) return null;
-  return arr;
+  let arr = [...elements].filter((f) => f.checked === true).map((f) => f.name);
+  return arr.length === 0 ? null : arr;
 }
 
 filters.forEach((f) => {
   f.addEventListener("click", () => {
-    let arr = getFilters(filters);
-    let filteredProducts = filterProducts(arr, products);
-    buildProducts(filteredProducts, shop);
+    buildProducts(filterProducts(getFilters(filters), products), shop);
   });
 });
 
@@ -51,8 +44,7 @@ filterOpen.addEventListener("click", () => {
 });
 
 sortBtn.addEventListener("click", () => {
-  let arr = getFilters(filters);
-  let filteredProducts = filterProducts(arr, state);
+  let filteredProducts = filterProducts(getFilters(filters), state);
   if (sort.value === "+") {
     filteredProducts.sort((a, b) => (a.price > b.price ? 1 : -1));
   } else if (sort.value === "-") {
