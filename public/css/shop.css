@@ -9,9 +9,13 @@ body {
   box-sizing: border-box;
 }
 .product-card {
+  position: relative;
+  top: 0;
+  transition: all ease 0.3s;
   justify-content: center;
   align-items: center;
   margin: 20px auto 20px auto;
+  margin-top: 20px;
   padding: 5px;
   background-color: var(--bg-card);
   border-radius: var(--round-corners);
@@ -19,8 +23,16 @@ body {
   overflow: hidden;
   width: 100%;
   background: linear-gradient(to top, white, var(--blue-accent) 20%, white 40%);
+  background-size: 100%;
   box-shadow: var(--shadow);
+  z-index: 5;
 }
+.product-card:hover {
+  top: -10px;
+  background-position-y: 50px;
+  background-repeat: no-repeat;
+}
+
 .product-card:hover,
 .single-product-theater img:hover {
   box-shadow: 0px 0px 20px 10px var(--blue-accent);
@@ -225,6 +237,17 @@ dialog .modal-container {
   }
   100% {
     transform: translateY(70%) rotate(200deg);
+  }
+}
+@keyframes ripple {
+  0% {
+    background-size: 50%;
+  }
+  50% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 50%;
   }
 }
 @media screen and (max-width: 280px) {
