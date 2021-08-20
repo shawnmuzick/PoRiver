@@ -239,17 +239,6 @@ dialog .modal-container {
     transform: translateY(70%) rotate(200deg);
   }
 }
-@keyframes ripple {
-  0% {
-    background-size: 50%;
-  }
-  50% {
-    background-size: 100%;
-  }
-  100% {
-    background-size: 50%;
-  }
-}
 @media screen and (max-width: 280px) {
   .product-card img {
     width: 250px;
