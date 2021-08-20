@@ -40,7 +40,7 @@ body {
   margin: 0px;
 }
 nav {
-  z-index: 3;
+  z-index: 6;
 }
 nav .site-title-container {
   display: flex;
@@ -164,7 +164,7 @@ nav,
   height: 0px;
   transition: 0.5s;
   text-align: left;
-  z-index: 1;
+  z-index: 6;
 }
 .nav-menu li {
   padding: 10px;
@@ -249,7 +249,7 @@ nav,
     display: flex;
   }
   .nav-menu {
-    z-index: 2;
+    /* z-index: 2; */
     padding: 5px;
   }
 }
