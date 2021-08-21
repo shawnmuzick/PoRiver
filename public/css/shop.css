@@ -22,15 +22,16 @@ body {
   text-align: center;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to top, white, var(--blue-accent) 20%, white 40%);
+  background: linear-gradient(to top, var(--blue-accent), white 30%);
   background-size: 100%;
   box-shadow: var(--shadow);
   z-index: 5;
 }
+.product-card img {
+  border-radius: var(--round-corners);
+}
 .product-card:hover {
   top: -10px;
-  background-position-y: 50px;
-  background-repeat: no-repeat;
 }
 
 .product-card:hover,
