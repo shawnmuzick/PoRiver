@@ -6,8 +6,8 @@ function Image(p) {
     attributes: {
       id: `${p.model}`,
       alt: `${p.model}`,
-      cssClass: ["product-card-img"],
     },
+    cssClass: ["product-card-img"],
     properties: {
       src: `./img/${p.model}.webp`,
     },
@@ -19,8 +19,8 @@ function Title(p) {
     type: "h3",
     properties: {
       innerText: `${p.model}`,
-      cssClass: ["product-card-title"],
     },
+    cssClass: ["product-card-title"],
   });
 }
 
@@ -29,8 +29,8 @@ function ShortDesc(p) {
     type: "p",
     properties: {
       innerText: `${p.short}`,
-      cssClass: ["product-card-short"],
     },
+    cssClass: ["product-card-short"],
   });
 }
 
@@ -39,8 +39,8 @@ function Price(p) {
     type: "p",
     properties: {
       innerText: `$${p.price}`,
-      cssClass: ["product-card-price"],
     },
+    cssClass: ["product-card-price"],
   });
 }
 

@@ -42,6 +42,11 @@ body {
   height: 300px;
   width: 300px;
 }
+.product-card-price {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+}
 dialog {
   justify-content: center;
   align-items: center;
