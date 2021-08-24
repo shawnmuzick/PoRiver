@@ -17,13 +17,21 @@ function insertElement(sibling, newNode, position) {
   }
 }
 
+function insertHeroTitle() {
+  document.getElementById("hero-text").innerText = document.title;
+}
+
 async function getElements() {
   let nav = await getTemplate("nav", "/nav/nav.html");
   let mobileNav = await getTemplate("nav", "/mobileNav/mobileNav.html");
   let footer = await getTemplate("footer", "/footer/footer.html");
+  let hero = await getTemplate("div", "/hero/hero.html");
   insertElement(main, nav, "after");
   insertElement(main, mobileNav, "before");
   insertElement(main, footer, "before");
+  insertElement(main, hero, "after");
+
   buildNav();
+  insertHeroTitle();
 }
 getElements();
