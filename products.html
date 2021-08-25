@@ -50,7 +50,7 @@
 <body id="body">
   <main class="flex column" id="main">
     <div class="flex shop-wrapper">
-      <div class="shop-filters filter-container-hide" id="filter-container">
+      <div class="flex column rounded card shop-filters filter-container-hide" id="filter-container">
         <button id="shop-filter-close">x</button>
         <h3>Categories</h3>
         <br />
@@ -87,7 +87,7 @@
           <label for="bass bows">Bass Bows</label>
         </div>
         <br />
-        <h3>Sort By</h3>
+        <h3 class="text-shadow" style="color: white;">Sort By</h3>
         <br />
         <div class="flex input-group">
           <select name="sort" id="sort">
@@ -95,10 +95,10 @@
             <option value="+">Price: Low to High</option>
             <option value="-">Price: High to Low</option>
           </select>
-          <button id="sortBtn">Sort</button>
+          <button class="rounded" id="sortBtn">Sort</button>
         </div>
       </div>
-      <div class="filter-show">
+      <div class="rounded card filter-show">
         <button id="shop-filter-open">
           <img id="filter-image" src="./img/filter_alt-black-18dp.svg" alt="" />
         </button>

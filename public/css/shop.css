@@ -1,5 +1,4 @@
 .shop {
-  padding-top: 10px;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
@@ -19,10 +18,10 @@
   text-align: center;
   overflow: hidden;
   width: 100%;
-  background: linear-gradient(to top, var(--blue-accent), white 30%);
+  background: var(--gradient-blue-white);
   background-size: 100%;
   box-shadow: var(--shadow);
-  z-index: 5;
+  z-index: 4;
 }
 .product-card img {
   border-radius: var(--round-corners);
@@ -94,13 +93,14 @@ dialog .modal-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: transparent;
   border: none;
   padding: 5px;
   width: 20px;
   height: 20px;
   border-radius: 3px;
   box-sizing: border-box;
+  font-weight: bold;
 }
 .modal-close-btn:hover,
 #shop-filter-close:hover {
@@ -142,12 +142,9 @@ dialog .modal-container {
 .shop-filters {
   padding: 10px;
   margin: 0px;
-  background-color: white;
-  z-index: 1;
-  border-radius: 3px;
+  z-index: 5;
   width: 200px;
   height: fit-content;
-  border: solid 1px var(--blue-accent);
   position: absolute;
   transition: 0.3s;
   overflow-x: hidden;
@@ -178,7 +175,6 @@ dialog .modal-container {
 .filter-show button {
   background-color: white;
   border: solid 0px transparent;
-  border: solid 1px var(--blue-accent);
   border-radius: 3px;
 }
 .filter-show button:focus {
@@ -219,6 +215,23 @@ dialog .modal-container {
   border-radius: 45%;
   animation: wave 4s ease-out infinite;
   z-index: 7;
+}
+#filter-container {
+  background: var(--gradient-blue-white);
+}
+#filter-container #sortBtn {
+  border: 1px solid transparent;
+  margin: 5px;
+  background-color: white;
+}
+#filter-container select {
+  border: 1px solid transparent;
+  outline: 1px transparent;
+  background: white;
+  border: 1px solid var(--blue-accent);
+  border-radius: var(--round-corners);
+  padding: 5px;
+  margin: 5px;
 }
 @keyframes wave {
   0% {
@@ -278,6 +291,9 @@ dialog .modal-container {
     width: 50px;
     height: 50px;
   }
+  .shop {
+    padding-top: 50px;
+  }
 }
 @media screen and (min-width: 360px) {
   #selected-product {
@@ -310,6 +326,9 @@ dialog .modal-container {
     width: 100px;
     height: 100px;
   }
+  .shop {
+    padding-top: 10px;
+  }
 }
 @media screen and (min-width: 1024px) {
   .shop {
@@ -328,14 +347,11 @@ dialog .modal-container {
     display: flex;
   }
   #filter-container {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     position: relative;
-    border: solid 1px var(--blue-accent);
     padding: 5px;
     margin-top: 20px;
-    max-width: 170px;
+    max-width: 200px;
   }
   .wave {
     height: 100vw;

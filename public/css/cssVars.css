@@ -5,6 +5,7 @@
   --height: 300px;
   --shadow: 0px 2px 5px 0px #888888;
   --bg-card: white;
-  --round-corners:.5em;
+  --round-corners: 0.5em;
   --text-shadow: 3px 3px black;
+  --gradient-blue-white: linear-gradient(to top, var(--blue-accent), white 30%);
 }
