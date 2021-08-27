@@ -295,6 +295,11 @@ dialog .modal-container {
     padding-top: 50px;
   }
 }
+@media screen and (max-width: 320px) {
+  #main {
+    align-items: center;
+  }
+}
 @media screen and (min-width: 360px) {
   #selected-product {
     width: 200px;
@@ -307,7 +312,7 @@ dialog .modal-container {
 }
 @media screen and (min-width: 768px) {
   .product-card {
-    width: calc(0.8 * var(--height));
+    width: calc(0.75 * var(--height));
   }
   .modal-body-inner {
     flex-direction: row;
@@ -327,15 +332,17 @@ dialog .modal-container {
     height: 100px;
   }
   .shop {
-    padding-top: 10px;
+    padding-top: 50px;
   }
 }
 @media screen and (min-width: 1024px) {
   .shop {
     justify-content: flex-start;
+    padding-top: 10px;
   }
   .product-card {
     margin: 10px;
+    width: calc(0.7 * var(--height));
   }
   #shop-filter-close {
     display: none;
@@ -356,5 +363,10 @@ dialog .modal-container {
   .wave {
     height: 100vw;
     width: 100vw;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .product-card {
+    width: calc(0.8 * var(--height));
   }
 }
